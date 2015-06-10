@@ -2,8 +2,6 @@
 
 A angualrjs infinite scrolling. Trigger events on scrolling to bottom.
 
-![](http://i.imgur.com/OzH16jz.gif)
-
 ## Installation
 
 #### via bower
@@ -11,7 +9,7 @@ A angualrjs infinite scrolling. Trigger events on scrolling to bottom.
 Run
 
 ```
-bower install zackexplosion-ngLoading
+bower install zackexplosion-ng-infinite-scroll
 ```
 
 in your angular module.
@@ -22,7 +20,7 @@ Add the following to `Gemfile`:
 
 ```ruby
 source 'https://rails-assets.org' do
-  gem 'rails-assets-zackexplosion-ng-infinite-scroll'
+  gem 'rails-assets-zackexplosion-ng-infinite-scroll
 end
 ```
 
@@ -61,4 +59,3 @@ gulp
 
 after which, open `http://localhost:8080/` in your browser.
 
-Edit `sass/zackexplosion.ng-loading.scss` for different styling!
