@@ -1,0 +1,26 @@
+{
+  "name": "zackexplosion-ngLoading",
+  "version": "1.2.0",
+  "authors": [
+    "Tony's Hackintosh <cstony0917@gmail.com>"
+  ],
+  "main": [
+    "js/zackexplosion-ngLoading.js",
+    "css/zackexplosion-ngLoading.css"
+  ],
+  "description": "an angularjs http loading effect",
+  "keywords": [
+    "angualrjs",
+    "http",
+    "loading"
+  ],
+  "license": "MIT",
+  "homepage": "http://zackexplosion.github.io/ngLoading/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
