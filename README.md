@@ -2,6 +2,10 @@
 
 A angualrjs infinite scrolling. Trigger events on scrolling to bottom.
 
+## DEMO
+
+[http://zackexplosion.github.io/ng-infinite-scroll](http://zackexplosion.github.io/ng-infinite-scroll)
+
 ## Installation
 
 #### via bower
