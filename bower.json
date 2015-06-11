@@ -5,7 +5,7 @@
     "Tony's Hackintosh <cstony0917@gmail.com>"
   ],
   "main": [
-    "js/zackexplosion-ng-infinite-scroll.js",
+    "js/zackexplosion-ng-infinite-scroll.js"
   ],
   "description": "an angularjs infinite scroll event broadcaster using rootScope",
   "keywords": [
