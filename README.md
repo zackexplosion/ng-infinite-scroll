@@ -1,6 +1,6 @@
 # zackexplosion-ng-infinite-scroll
 
-An angualrjs infinite scrolling. Trigger loading more content on scrolling to bottom.
+An angualrjs infinite scrolling. Trigger event on scrolling to bottom.
 
 ## DEMO
 
