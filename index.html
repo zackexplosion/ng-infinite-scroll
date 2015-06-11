@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+<head>
+  <title>Zackexplosion angularjs loading</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-sanitize.js"></script>
+  
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.min.css" />
+
+  <script src="bower_components/zackexplosion-ngLoading/js/zackexplosion-ngLoading.js"></script>
+  <link rel="stylesheet" type="text/css" href="bower_components/zackexplosion-ngLoading/css/zackexplosion-ngLoading.css" />
+  <script src="/js/zackexplosion-ng-infinite-scroll.js"></script>
+<!--   <link rel="stylesheet" type="text/css" href="css/zackexplosion-ngLoading.css"> -->
+
+  <script type="text/javascript">
+  angular.module('app',[
+    'ngSanitize',
+    'zackexplosion-ngLoading',
+    'zackexplosion-ng-infinite-scroll',
+  ])
+  .run(['$rootScope', '$http', function($rootScope, $http){
+    $rootScope.zackexplosion_loading = false;
+    $http.get('http://zackexplosion.com/posts.json').then(function(res){
+      $rootScope.data = res.data;
+    });
+  }])
+  </script>
+  <style type="text/css">
+  .table-responsive{
+    max-height: 80vh;
+  }
+  </style>
+</head>
+<body>
+  <!-- TOP RIGHT RIBBON: START COPYING HERE -->
+  <div class="github-fork-ribbon-wrapper right">
+      <div class="github-fork-ribbon">
+          <a href="https://github.com/zackexplosion/ng-infinite-scroll">Fork me on GitHub</a>
+      </div>
+  </div>
+  <div id="zackexplosion-ng-loading" data-ng-show="zackexplosion_loading" class="whirly-loader">Loading…</div>
+
+
+  <div class="container">
+    <h1>Zackexplosion-ng-infinite-scroll</h1>
+    <hr />
+    <h2><a href="http://zackexplosion.com">Zackexplosion.com</a> posts</h2>
+
+
+    <div id="post-list" ng-repeat="post in data" ng-class="post-{{post.id}}">
+      <!-- <div class="page-header"> -->
+      <a class="title" ui-sref="posts.show({id:post.id})"><h1>{{post.title}}</h1></a>
+
+      <small class="date">{{post.published_at}}</small>
+      <!-- </div> -->
+
+      <article ng-bind-html="post.content"></article>
+      
+      <button ui-sref="posts.show({id:post.id})" class="btn btn-primary">閱讀更多<span class="glyphicon glyphicon-chevron-right"></span></button>
+      <hr />
+    </div>
+
+
+  </div>
+
+</body>
+</html>
+
