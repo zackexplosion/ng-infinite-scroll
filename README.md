@@ -1,8 +1,14 @@
 # zackexplosion-ng-infinite-scroll
 
-An angualrjs infinite scrolling. Trigger events on scrolling to bottom.
+An angualrjs infinite scrolling. Trigger loading more content on scrolling to bottom.
 
 ## DEMO
+
+![](http://i.imgur.com/VI2GtcE.gif)
+
+Scrolling to the bottom will trigger the loading effect to load more content.
+
+Experience it yourself:
 
 [http://zackexplosion.github.io/ng-infinite-scroll](http://zackexplosion.github.io/ng-infinite-scroll)
 
@@ -57,13 +63,13 @@ $rootScope.$on('scrollToBottom', function(){
 
 Fork & clone the project, and run the following commands in the project directory:
 
-```
+```bash
 npm install
 ```
 
 and
 
-```
+```bash
 gulp
 ```
 
