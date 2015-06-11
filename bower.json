@@ -1,0 +1,28 @@
+{
+  "name": "zackexplosion-ng-infinite-scroll",
+  "version": "0.0.1",
+  "authors": [
+    "Tony's Hackintosh <cstony0917@gmail.com>"
+  ],
+  "main": [
+    "js/zackexplosion-ng-infinite-scroll.js",
+  ],
+  "description": "an angularjs infinite scroll event broadcaster",
+  "keywords": [
+    "angualrjs",
+    "infinite",
+    "scroll"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/zackexplosion/ng-infinite-scroll",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "zackexplosion-ngLoading": "~1.2.0"
+  }
+}
