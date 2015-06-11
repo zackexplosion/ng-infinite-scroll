@@ -12,7 +12,7 @@ A angualrjs infinite scrolling. Trigger events on scrolling to bottom.
 
 Run
 
-```
+``` bash
 bower install zackexplosion-ng-infinite-scroll
 ```
 
@@ -22,7 +22,7 @@ in your angular module.
 
 Add the following to `Gemfile`:
 
-```ruby
+``` ruby
 source 'https://rails-assets.org' do
   gem 'rails-assets-zackexplosion-ng-infinite-scroll
 end
@@ -45,7 +45,13 @@ angular
 ])
 ```
 
-If you have any ajax request, the circle effect should pop up when loading ajax.
+In your controller
+
+``` javascript
+$rootScope.$on('scrollToBottom', function(){      
+  // do something
+});
+```
 
 ## Contribute
 
