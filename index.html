@@ -43,9 +43,9 @@
 
 
   <div class="container">
-    <h1>Zackexplosion-ng-infinite-scroll</h1>
+    <h1>Zackexplosion-ng-infinite-scroll DEMO</h1>
     <hr />
-    <h2><a href="http://zackexplosion.com">Zackexplosion.com</a> posts</h2>
+    <!-- <h2><a href="http://zackexplosion.com">Zackexplosion.com</a> posts</h2> -->
 
 
     <div id="post-list" ng-repeat="post in data" ng-class="post-{{post.id}}">
@@ -57,7 +57,8 @@
 
       <article ng-bind-html="post.content"></article>
       
-      <button ui-sref="posts.show({id:post.id})" class="btn btn-primary">閱讀更多<span class="glyphicon glyphicon-chevron-right"></span></button>
+      <!-- <button ui-sref="posts.show({id:post.id})" class="btn btn-primary">閱讀更多<span class="glyphicon glyphicon-chevron-right"></span></button> -->
+      <a href="http://zackexplosion.com/p/{{post.id}}" target="_blank" class="btn btn-primary">閱讀更多</a>
       <hr />
     </div>
 
